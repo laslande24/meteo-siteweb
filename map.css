@@ -1,0 +1,68 @@
+#map-container {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+#cameroon-map {
+    width: 100%;
+    height: auto;
+}
+
+.weather-dot {
+    cursor: pointer;
+	 transition: transform 0.6s ease, fill 0.6s ease;
+}
+
+.weather-dot:hover {
+    transform: scale(1); 
+    fill: orange; 
+}
+
+.weather-dot[title]:hover:after {
+    content: attr(title);
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 4px;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+#chart-container {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+#table-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.randomize-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.zoom-btn {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin: 5px;
+}
+
